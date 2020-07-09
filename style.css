@@ -1,0 +1,646 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  margin: 0;
+  padding: 0;
+  font-family: "Caveat", cursive;
+  background-image: url("img/background4.jpg");
+  background-repeat: no-repeat;
+}
+
+p,
+h1,
+h2,
+h3,
+h5 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.scroll {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.scroll::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 200px;
+  margin: auto;
+}
+
+/* styling the menu logo circle */
+
+.circle {
+  position: relative;
+  height: 8vw;
+  width: 8vw;
+  min-width: 120px;
+  min-height: 120px;
+  background: linear-gradient(
+    #9ca7e9 0%,
+    #6d58a8 10%,
+    #1f1e66 80%,
+    #4119ad 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  transition: all 0.8s ease-in-out;
+  z-index: 100;
+}
+.circle::before {
+  content: "";
+  height: 7.5vw;
+  width: 7.5vw;
+  min-width: 100px;
+  min-height: 100px;
+  background: linear-gradient(#a3dce6 0%, #5a7d85 80%, #141718 90%);
+  filter: blur(18px);
+  border-radius: 50%;
+  transition: all 0.8s ease-in-out;
+}
+
+.img {
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+/* styling the nav bar with the menu items */
+
+.menu {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 3em;
+}
+
+.menu-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+}
+
+/* Styling the main */
+
+#main {
+  width: 100%;
+  height: calc(100vh - 200px);
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 200px;
+}
+
+.first {
+  width: 70%;
+  height: 80%;
+  font-size: 2rem;
+  padding: 3rem 2rem;
+}
+
+.first,
+.second,
+.third {
+  position: absolute;
+  top: 0;
+}
+
+.first h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.first p {
+  margin-bottom: 1.5rem;
+}
+
+.first p:nth-child(5) {
+  margin-bottom: 2rem;
+}
+
+.first p:nth-child(6) {
+  margin-bottom: 0;
+}
+
+/* Experience and Education */
+
+.second {
+  max-width: 90%;
+  height: 100%;
+  font-size: 2rem;
+  padding: 3rem 2rem;
+}
+
+.second h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.second .exp_edu {
+  max-width: 100%;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "experience experience experience"
+    "job1 job2 job3"
+    "job4 job5 ...."
+    "education education education"
+    "edu1 edu2 ...."
+    ".... resume ....";
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.experience {
+  grid-area: experience;
+}
+
+.education {
+  grid-area: education;
+  margin-top: 2rem;
+}
+
+.job-1 {
+  grid-area: job1;
+}
+.job-2 {
+  grid-area: job2;
+}
+.job-3 {
+  grid-area: job3;
+}
+.job-4 {
+  grid-area: job4;
+}
+.job-5 {
+  grid-area: job5;
+}
+
+.edu-1 {
+  grid-area: edu1;
+}
+.edu-2 {
+  grid-area: edu2;
+}
+
+.resume {
+  grid-area: resume;
+  text-align: center;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0;
+}
+
+.resume:hover a {
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.second .job ul {
+  display: none;
+}
+
+/* Contact page */
+
+.third {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.third .contact_page {
+  height: 100%;
+  width: 100%;
+}
+
+.third .contact_me {
+  height: 60%;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.third .boxes {
+  height: 30%;
+  max-width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.third .boxes .icons {
+  padding: 1rem 2rem;
+}
+
+.current {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Circle Animation */
+
+.circle.start-button {
+  position: absolute;
+  top: 15vw;
+  left: 40vw;
+  height: 20vw;
+  width: 20vw;
+  min-width: 400px;
+  min-height: 400px;
+  background: linear-gradient(
+    #9ca7e9 0%,
+    #594299 10%,
+    #3a399c 60%,
+    #19074d 100%
+  );
+
+  animation: scale 5s linear infinite;
+}
+
+.start-button.circle::before {
+  content: "";
+  height: 19vw;
+  width: 19vw;
+  min-width: 180px;
+  min-height: 180px;
+  background: linear-gradient(#91d1dd 0%, #3c6872 60%, #141718 90%);
+  filter: blur(18px);
+  border-radius: 50%;
+  animation: scale 5s linear infinite;
+}
+
+.circle.start-button .img {
+  width: 16vw;
+  height: 16vw;
+  min-width: 160px;
+  min-height: 160px;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 1171px) and (max-width: 1450px) {
+  .second .exp_edu {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .img {
+    min-width: 100px;
+    min-height: 100px;
+  }
+  .menu {
+    font-size: 1.8rem;
+  }
+
+  .menu-nav {
+    width: 90%;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    margin: 0rem;
+    padding: 0rem 1rem;
+  }
+
+  .first {
+    width: 90%;
+    font-size: 1.8rem;
+    padding-top: 2rem;
+  }
+
+  .home h2 {
+    font-size: 2rem;
+  }
+
+  /* Ecp and Edu */
+  .second .exp_edu {
+    grid-template-areas:
+      "experience experience"
+      "job1 job2"
+      "job3 job4"
+      "job5 ...."
+      "education education"
+      "edu1 edu2"
+      "resume resume";
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.7rem;
+  }
+
+  .resume {
+    grid-area: resume;
+    position: static;
+    margin: 0;
+  }
+  .third .contact_me {
+    width: 80%;
+  }
+
+  .third .contact_me h3 {
+    font-size: 2.2rem;
+  }
+
+  .third .boxes {
+    height: 40%;
+    max-width: 80%;
+  }
+
+  .circle.start-button {
+    position: absolute;
+    top: 25vw;
+    left: 40vw;
+    height: 20vw;
+    width: 20vw;
+    min-width: 200px;
+    min-height: 200px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .first {
+    width: 100%;
+  }
+  .menu-nav {
+    width: 100%;
+    max-height: 120px;
+    margin: 0;
+    padding: 2rem 0 0 0;
+  }
+
+  .menu {
+    width: 100%;
+    height: 200px;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .home {
+    width: 100%;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  .home h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Education and EXP */
+  .second.both {
+    width: 90%;
+  }
+  .second .exp_edu {
+    grid-template-areas:
+      "experience experience"
+      "job1 job2"
+      "job3 job4"
+      "job5 ...."
+      "education education"
+      "edu1 edu2"
+      "resume resume";
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.2rem;
+  }
+
+  .resume {
+    grid-area: resume;
+    position: static;
+    margin: 0;
+  }
+
+  .second h2 {
+    margin: 0.2rem 0 0.4rem;
+  }
+
+  .third .contact_me {
+    width: 90%;
+  }
+
+  .third .contact_me h3 {
+    font-size: 1.9rem;
+  }
+
+  .third .boxes {
+    height: 40%;
+    max-width: 90%;
+  }
+
+  /* QUery Animation */
+  .circle.start-button {
+    position: absolute;
+    top: 30vw;
+    left: 35vw;
+    height: 20vw;
+    width: 20vw;
+    min-width: 200px;
+    min-height: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #header {
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    padding: 1rem 0 0.5rem 0;
+  }
+
+  .circle {
+    min-width: 100px;
+    min-height: 100px;
+  }
+  .img {
+    min-width: 80px;
+    min-height: 80px;
+  }
+
+  .menu-nav {
+    height: 80px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu {
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    font-size: 1.5rem;
+  }
+
+  .first {
+    width: 100%;
+    overflow-y: scroll;
+
+    font-size: 1.2rem;
+    padding-top: 2rem;
+  }
+
+  .first h2 {
+    font-size: 1.3rem;
+  }
+
+  /* Media for Edu and Exp */
+
+  .second .exp_edu {
+    grid-template-areas:
+      "experience"
+      "job1"
+      "job2"
+      "job3"
+      "job4"
+      "job5"
+      "education"
+      "edu1"
+      "edu2"
+      "resume";
+    grid-template-columns: 1fr;
+    font-size: 1.2rem;
+  }
+
+  .resume {
+    grid-area: resume;
+    position: static;
+    margin: 0;
+  }
+
+  .second h2 {
+    margin: 0.2rem 0 0.4rem;
+  }
+
+  /* Contact Page */
+
+  .third .contact_me {
+    width: 90%;
+  }
+
+  .third .contact_me h3 {
+    font-size: 1.7rem;
+  }
+
+  .third .boxes {
+    height: 40%;
+    max-width: 90%;
+  }
+
+  /* QUery Animation */
+  .circle.start-button {
+    position: absolute;
+    top: 50vw;
+    left: 25vw;
+    height: 20vw;
+    width: 20vw;
+    min-width: 200px;
+    min-height: 200px;
+    background: linear-gradient(
+      #9ca7e9 0%,
+      #594299 10%,
+      #3a399c 60%,
+      #19074d 100%
+    );
+
+    animation: scale 5s linear infinite;
+  }
+
+  .start-button.circle::before {
+    content: "";
+    height: 19vw;
+    width: 19vw;
+    min-width: 180px;
+    min-height: 180px;
+    background: linear-gradient(#91d1dd 0%, #3c6872 60%, #141718 90%);
+    filter: blur(18px);
+    border-radius: 50%;
+    animation: scale 5s linear infinite;
+  }
+
+  .circle.start-button .img {
+    width: 16vw;
+    height: 16vw;
+    min-width: 160px;
+    min-height: 160px;
+  }
+}
+
+/* Animations */
+
+.hide {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}

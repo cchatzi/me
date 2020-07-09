@@ -144,11 +144,7 @@ header {
   margin-bottom: 1.5rem;
 }
 
-.first p:nth-child(5) {
-  margin-bottom: 2rem;
-}
-
-.first p:nth-child(6) {
+.first p:nth-child(4) {
   margin-bottom: 0;
 }
 
@@ -218,13 +214,23 @@ header {
   text-align: center;
   margin-top: 0.5rem;
   padding: 0.2rem 0;
+  position: relative;
+  z-index: 1000;
+}
+
+.resume a {
+  text-decoration: none;
+  color: #495e7f;
+  border: 1px solid rgb(44, 28, 97);
+  padding: 0.5rem 1rem;
 }
 
 .resume:hover a {
-  background-color: black;
+  background-color: #495e7f;
   color: #fff;
   width: 100%;
   padding: 0.5rem 1rem;
+  transition: all 0.5s ease-in;
 }
 
 .second .job ul {
@@ -234,7 +240,7 @@ header {
 /* Contact page */
 
 .third {
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -269,6 +275,14 @@ header {
 
 .third .boxes .icons {
   padding: 1rem 2rem;
+}
+
+.third .boxes .icons i {
+  color: #495e7f;
+}
+
+.third .boxes .icons i:hover {
+  color: #31276d;
 }
 
 .current {

@@ -6,7 +6,7 @@ body,
 html {
   box-sizing: border-box;
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: -2;
   margin: 0;
@@ -151,7 +151,7 @@ header {
 
 .second {
   max-width: 90%;
-  height: 100vh;
+  /* height: 100vh; */
   font-size: 2rem;
   padding: 3rem 2rem;
 }
@@ -241,7 +241,7 @@ header {
 
 .third {
   width: 80%;
-  height: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -251,17 +251,17 @@ header {
 }
 
 .third .contact_page {
-  height: 100%;
+  /* height: 70%; */
   width: 100%;
 }
 
 .third .contact_me {
   height: 100%;
   width: 70%;
-  margin: 0 auto;
+  margin: 2rem auto;
   font-size: 1.8rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .third .boxes {
@@ -598,7 +598,14 @@ header {
   /* Contact Page */
 
   .third .contact_me {
-    width: 90%;
+    width: 70%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
   }
 
   .third .contact_me h3 {
@@ -649,6 +656,22 @@ header {
   }
 }
 
+@media only screen and (max-width: 850px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .third .contact_me {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+  }
+
+  .third {
+    width: 80%;
+    height: 100%;
+    padding: 6rem 0;
+  }
+}
 /* Animations */
 
 .hide {

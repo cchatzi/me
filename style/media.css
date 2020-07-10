@@ -1,0 +1,162 @@
+/* Media Queries */
+
+@media screen and (min-width: 501px) {
+  .menu {
+    font-size: 1.8em;
+    width: 80%;
+  }
+
+  .second .exp_edu {
+    grid-template-areas:
+      "experience experience"
+      "job1 job2"
+      "job3 job4"
+      "job5 ...."
+      "education education"
+      "edu1 edu2"
+      "resume resume";
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #header {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .circle {
+    height: 7vw;
+    width: 7vw;
+    min-width: 80px;
+    min-height: 80px;
+  }
+  .circle::before {
+    height: 6.5vw;
+    width: 6.5vw;
+    min-width: 70px;
+    min-height: 70px;
+  }
+
+  .img {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    min-width: 60px;
+    min-height: 60px;
+  }
+
+  .menu {
+    font-size: 2em;
+    width: 70%;
+  }
+
+  #main .first .home {
+    width: 75%;
+  }
+
+  .first h2 {
+    font-size: 2rem;
+  }
+
+  .first p {
+    font-size: 1.8rem;
+  }
+
+  .second .exp_edu {
+    font-size: 1.6rem;
+    width: 75%;
+  }
+
+  #main .third .contact_page {
+    width: 60%;
+  }
+
+  #main .third .contact_page h3 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1171px) {
+  #header {
+    height: var(--desktop-position);
+  }
+
+  #main {
+    top: var(--desktop-position);
+  }
+
+  .menu {
+    font-size: 3em;
+  }
+
+  .circle {
+    min-width: 140px;
+    min-height: 140px;
+  }
+  .circle::before {
+    min-width: 120px;
+    min-height: 120px;
+  }
+
+  .img {
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  #main .first .home {
+    width: 65%;
+  }
+
+  .first h2 {
+    font-size: 2.2rem;
+  }
+
+  .first p {
+    font-size: 2rem;
+  }
+
+  .second .exp_edu {
+    grid-template-areas:
+      "experience experience experience"
+      "job1 job2 job3"
+      "job4 job5 ...."
+      "education education education"
+      "edu1 edu1 edu2"
+      ".... resume ....";
+    grid-template-columns: repeat(3, 1fr);
+    height: 65vh;
+    width: 80%;
+    font-size: 2.2rem;
+  }
+
+  .edu-1 {
+    width: 100%;
+    text-align: left;
+  }
+
+  #main .third .contact_page {
+    width: 50%;
+  }
+
+  #main .third .contact_page h3 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1471px) {
+  #main .first .home {
+    width: 50%;
+  }
+
+  .first h2 {
+    font-size: 2.5rem;
+  }
+
+  .first p {
+    font-size: 2.2rem;
+  }
+}

@@ -128,7 +128,7 @@
       "edu1 edu1 edu2"
       ".... resume ....";
     grid-template-columns: repeat(3, 1fr);
-    height: 65vh;
+    height: 72vh;
     width: 80%;
     font-size: 2.2rem;
   }

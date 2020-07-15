@@ -1,5 +1,5 @@
 :root {
-  --mobile-position: 120px;
+  --mobile-position: 160px;
   --desktop-position: 200px;
 }
 
@@ -48,6 +48,7 @@ h5 {
 }
 
 #header {
+  position: relative;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -59,18 +60,34 @@ h5 {
   margin: 0 auto;
 }
 
+.badge {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Menu badge clicked - tranformed to icon */
+
+.badge.badge-icon {
+  top: 0;
+  width: 100%;
+  height: 100px;
+}
+
 /* styling the menu logo circle */
 
-.circle {
+/* .circle {
   position: relative;
   min-width: 60px;
   min-height: 60px;
-  max-width: 190px;
-  max-height: 190px;
   background: linear-gradient(
     #9ca7e9 0%,
     #6d58a8 10%,
-    #1f1e66 80%,
+    #1f1e66 60%,
     #4119ad 100%
   );
   border-radius: 50%;
@@ -88,7 +105,7 @@ h5 {
 
   min-width: 55px;
   min-height: 55px;
-  background: linear-gradient(#a3dce6 0%, #5a7d85 80%, #141718 90%);
+  background: linear-gradient(#a3dce6 0%, #5a7d85 80%, #141718 100%);
   filter: blur(18px);
   border-radius: 50%;
   transition: all 0.8s ease-in-out;
@@ -99,12 +116,216 @@ h5 {
 
   min-width: 50px;
   min-height: 50px;
+} */
+
+/* Menu Badge */
+
+.circle.start-button {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  /* background: linear-gradient(
+    #676768 0%,
+    #e7e2e2 30%,
+    #e3e8f0 50%,
+    #080808 100%
+  ); */
+  background: radial-gradient(
+    circle at 65% 15%,
+    white 3px,
+    rgb(212, 207, 207) 5%,
+    rgb(41, 41, 42) 75%,
+    rgb(138, 135, 135) 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  z-index: 1000;
+  /* border: 0.9px solid rgb(153, 149, 149); */
+  box-shadow: 0.2px 0.2px 20px 2px rgb(61, 60, 60);
+}
+
+.badge.badge-icon .circle {
+  top: 10px;
+  left: 10px;
+  height: 80px;
+  width: 80px;
+}
+
+.circle::before {
+  content: "";
+  width: 180px;
+  height: 180px;
+  /* background: linear-gradient(
+    rgba(255, 252, 252, 0.233) 0%,
+    #feffff 15%,
+    #1c1c1d4d 90%
+  ); */
+  filter: blur(18px);
+  border-radius: 50%;
+}
+
+.badge.badge-icon .circle::before {
+  width: 60px;
+  height: 60px;
+}
+
+.img {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+}
+
+.badge.badge-icon .img {
+  width: 50px;
+  height: 50px;
+}
+
+#name span {
+  font-family: "Caveat", monospace;
+  font-size: 2.2rem;
+  font-weight: bold;
+  height: 150px;
+  position: absolute;
+  top: -20px;
+  left: 116px;
+  transform-origin: bottom center;
+  z-index: 2;
+}
+
+#title span {
+  font-family: "Caveat", monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  height: 120px;
+  position: absolute;
+  bottom: -5px;
+  left: 120px;
+  transform-origin: top center;
+  z-index: 2;
+}
+
+.badge.badge-icon #title span,
+.badge.badge-icon #name span {
+  display: none;
+}
+
+.char1 {
+  transform: rotate(-48deg);
+}
+.char2 {
+  transform: rotate(-38deg);
+}
+.char3 {
+  transform: rotate(-29deg);
+}
+.char4 {
+  transform: rotate(-20deg);
+}
+.char5 {
+  transform: rotate(-11deg);
+}
+.char6 {
+  transform: rotate(-1deg);
+}
+.char7 {
+  transform: rotate(9deg);
+}
+.char8 {
+  transform: rotate(18deg);
+}
+.char9 {
+  transform: rotate(27deg);
+}
+.char10 {
+  transform: rotate(36deg);
+}
+.char11 {
+  transform: rotate(45deg);
+}
+.char12 {
+  transform: rotate(54deg);
+}
+
+.title-char1 {
+  transform: rotate(50deg);
+}
+.title-char2 {
+  transform: rotate(44deg);
+}
+.title-char3 {
+  transform: rotate(38deg);
+}
+.title-char4 {
+  transform: rotate(32deg);
+}
+.title-char5 {
+  transform: rotate(26deg);
+}
+.title-char6 {
+  transform: rotate(20deg);
+}
+.title-char7 {
+  transform: rotate(14deg);
+}
+.title-char8 {
+  transform: rotate(8deg);
+}
+.title-char9 {
+  transform: rotate(2deg);
+}
+.title-char10 {
+  transform: rotate(-4deg);
+}
+.title-char11 {
+  transform: rotate(-10deg);
+}
+.title-char12 {
+  transform: rotate(-16deg);
+}
+.title-char13 {
+  transform: rotate(-22deg);
+}
+.title-char14 {
+  transform: rotate(-28deg);
+}
+.title-char15 {
+  transform: rotate(-34deg);
+}
+.title-char16 {
+  transform: rotate(-40deg);
+}
+.title-char17 {
+  transform: rotate(-46deg);
+}
+.title-char18 {
+  transform: rotate(-52deg);
+}
+
+.badge.badge-icon #userName {
+  position: absolute;
+  font-size: 2.2rem;
+  top: 10px;
+  left: 120px;
+}
+
+.badge.badge-icon #userTitle {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 3.2rem;
+  left: 160px;
 }
 
 /* styling the nav bar with the menu items */
 
 .menu {
   width: 100%;
+  position: absolute;
+  top: 120px;
   margin: 0 auto;
   font-size: 1.5em;
 }
@@ -118,6 +339,11 @@ h5 {
   margin: 0 auto;
   list-style: none;
   padding: 0;
+}
+
+.nav-item {
+  padding: 0.5rem 0.5rem;
+  z-index: 5000;
 }
 
 /* adjusting the size of each div where the sections are included */
@@ -183,6 +409,7 @@ h5 {
 
 #main .second {
   width: 100%;
+  height: 100vh;
   display: flex;
   margin: 0 auto;
   padding-top: 2rem;
@@ -193,7 +420,7 @@ h5 {
 
 .second .exp_edu {
   width: 90%;
-  height: 75vh;
+  height: 70%;
   display: grid;
   grid-gap: 30px;
   text-align: center;
@@ -264,19 +491,11 @@ h5 {
 }
 
 .resume a:hover {
-  background-color: #495e7f;
-  color: #fff;
+  background-color: #838d9e;
+  color: rgb(141, 18, 55);
   width: 100%;
+  border: 1px solid rgb(141, 18, 55);
   padding: 0.5rem 1rem;
-  transition: all 0.5s ease-in;
-}
-
-.resume a:focus {
-  background-color: #0d1420;
-  color: #fff;
-  width: 100%;
-  padding: 0.5rem 1rem;
-  transition: all 0.1s ease-in;
 }
 
 .second .job ul {
@@ -327,21 +546,23 @@ h5 {
 
 /* Animations */
 
-.index {
-}
 .hide {
   opacity: 0;
-  transition: all 1s ease-in-out;
+  /* transition: all 1s ease-in-out; */
   z-index: 5;
 }
 
 .show {
-  opacity: 1;
-  transition: all 1s ease-in-out;
   z-index: 100;
 }
 
 .current {
   text-decoration: underline;
   font-weight: bold;
+}
+
+/* Start Button Styling */
+
+.display {
+  display: none;
 }

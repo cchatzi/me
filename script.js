@@ -6,6 +6,40 @@ const navItems = document.querySelectorAll(".nav-item");
 const first = document.querySelector(".first");
 const second = document.querySelector(".second");
 const third = document.querySelector(".third");
+const startButton = document.getElementById("start-button");
+const navBar = document.getElementById("nav-bar");
+const name = document.getElementById("name");
+const title = document.getElementById("title");
+const badge = document.getElementById("badge");
+const userName = document.getElementById("userName");
+const userTitle = document.getElementById("userTitle");
+
+startButton.addEventListener("click", () => {
+  badge.classList.toggle("badge-icon");
+  userName.classList.toggle("hide");
+  userTitle.classList.toggle("hide");
+
+  if (second.classList.contains("hide") && third.classList.contains("hide")) {
+    first.classList.toggle("hide");
+  } else {
+    first.classList.add("hide");
+  }
+
+  navItems.forEach((item) => {
+    item.classList.remove("current");
+  });
+
+  navBar.classList.toggle("hide");
+
+  if (!second.classList.contains("hide")) {
+    second.classList.add("hide");
+  }
+
+  if (!third.classList.contains("hide")) {
+    third.classList.add("hide");
+  }
+  about.classList.add("current");
+});
 
 menuNav.addEventListener("click", (e) => {
   navItems.forEach((item) => {

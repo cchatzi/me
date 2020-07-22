@@ -1,40 +1,9 @@
 /* Media Queries */
 
 @media screen and (min-width: 501px) {
-  .menu {
-    font-size: 1.8em;
-    width: 100%;
-  }
-
-  .badge.badge-icon #userName {
-    position: absolute;
-    font-size: 2.2rem;
-    top: 10px;
-    left: 120px;
-  }
-
-  .badge.badge-icon #userTitle {
-    position: absolute;
-    font-size: 1.5rem;
-    top: 3.2rem;
-    left: 220px;
-  }
-
-  .second .exp_edu {
-    grid-template-areas:
-      "experience experience"
-      "job1 job2"
-      "job3 job4"
-      "job5 ...."
-      "education education"
-      "edu1 edu2"
-      "resume resume";
-    grid-template-columns: repeat(2, 1fr);
-    font-size: 1.4rem;
-  }
-
-  .second .exp_edu .experience {
-    padding-top: 2rem;
+  .header.mainPage .badge .circle.start-button {
+    width: 80px;
+    height: 80px;
   }
 }
 

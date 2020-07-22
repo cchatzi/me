@@ -8,31 +8,20 @@
       crossorigin="anonymous"
 	></script>
 	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style/style.css" />
-	<link rel="stylesheet" href="style/media.css">
+	<link rel="stylesheet" href="fonts/fearless.ttf">
+	<link rel="stylesheet" href="style/normalize.css" />
+	<link rel="stylesheet" href="style/style2.css" />
+	<!-- <link rel="stylesheet" href="style/media.css"> -->
     <title>Chris Chatzi | Support Specialist</title>
   </head>
   <body id="bg-img" class="disable-scrollbars">
-    <header id="header">
+    <header id="header" class="header homePage cover start">
+		<div class="headline hide">
+			<h1 id="userName" class="userName" >Chris Chatzi</h1>
+			<h2 id="userTitle" class="userTitle">Support Specialist</h2>
+		</div>
 		<div id="badge" class="badge">
-			<h2 id="userName" class="hide" >Chris Chatzi</h2>
-			<h2 id=name>
-				<span class="char1">C</span>
-				<span class="char2">h</span>
-				<span class="char3">r</span>
-				<span class="char4">i</span>
-				<span class="char5">s</span>
-				<span class="char6">&nbsp;</span>
-				<span class="char7">C</span>
-				<span class="char8">h</span>
-				<span class="char9">a</span>
-				<span class="char10">t</span>
-				<span class="char11">z</span>
-				<span class="char12">i</span>
-			
-			</h2>
-			<h2 id="userTitle" class="hide">Support Specialist</h2>
-			<h2 id=title>
+			<h2 id=title class="">
 				<span class="title-char1">S</span>
 				<span class="title-char2">u</span>
 				<span class="title-char3">p</span>
@@ -53,27 +42,51 @@
 				<span class="title-char18">t</span>
 			
 			</h2>
-		  <div id="start-button" class="circle start-button">
-			<div class="img"><img src="img/logo_1.svg" alt="" /></div>
+			<h2 id=name class="">
+				<span class="char1">C</span>
+				<span class="char2">h</span>
+				<span class="char3">r</span>
+				<span class="char4">i</span>
+				<span class="char5">s</span>
+				<span class="char6">&nbsp;</span>
+				<span class="char7">C</span>
+				<span class="char8">h</span>
+				<span class="char9">a</span>
+				<span class="char10">t</span>
+				<span class="char11">z</span>
+				<span class="char12">i</span>
+			
+			</h2>
+		  <div id="start-button" class="circle start-button pageButton">
+			<div class="img "><img src="img/logo_1.svg" alt="" /></div>
 		  </div>
+		 <h4 class="underConstruction">Under Construction</h4>
 		</div>
-      <!-- <img src="img/logo.png" alt="" /> -->
-      <nav id="nav-bar" class="menu hide">
-        <ul class="menu-nav">
-          <li class="nav-item current about">About</li>
-          <li class="nav-item exp_edu">Exp & Edu</li>
-          <li class="nav-item contact">How to reach me!</li>
+	  <!-- <img src="img/logo.png" alt="" /> -->
+	  <div id="hamburger" class="hamburger hide ">
+		  <div class="hamburgerItems"></div>
+		  <div class="hamburgerItems"></div>
+		  <div class="hamburgerItems"></div>
+	  </div>
+      <nav id="navBar" class="menu hide">
+        <ul class="menuNav" id="menuNav">
+          <li class="navItem about opacity current"><i class="fas fa-info"></i>About</li>
+          <li class="navItem exp_edu opacity "><i class="fas fa-shapes"></i>Exp & Edu</li>
+          <li class="navItem contact  opacity"><i class="fas fa-id-card-alt"></i>How to reach me!</li>
         </ul>
       </nav>
     </header>
 
-    <main id="main">
-        <div class="first position hide">
-            <section id="home" class="home show">
-				<h2>Hey There!</h2>
+    <main id="main" class="main hide">
+        <div class="first position ">
+            <section id="home" class="home">
+				<h3>Hey There!</h3>
 
 				<p>
-				Thank you for visiting my Site! It's Chris here, an enthusiastic and experienced professional with four years of experience in a customer-facing role. An excellent communicator with exceptional listening and multitasking skills. With a great appreciation for the value of delivering unique customer experience, proactive, persistent, and with great attention to detail. Willing to take the extra mile and eager to learn and improve. 
+				Thank you for visiting my Site! It's Chris here, an enthusiastic and experienced professional with four years of experience in a customer-facing role. An excellent communicator with exceptional listening and multitasking skills. 
+				</p>
+				<p>
+				With a great appreciation for the value of delivering unique customer experience, proactive, persistent, and with great attention to detail. Willing to take the extra mile and eager to learn and improve. 
 				</p>
 
 				<p>
@@ -88,30 +101,30 @@
 
       <div class="second both border size position hide">
         <section class="exp_edu">
-			<h2 class="experience">Experience</h2>
+			<h3 class="experience">Experience</h3>
 			<div class="job job-1">
-				<h3>Support Specialist</h3>
-				<h5>LearnWorlds, Remote <span> Nov 2019 - May 2020</span></h5>
+				<h4>Support Specialist</h4>
+				<h5>LearnWorlds, Remote |<span> Nov 2019 - May 2020</span></h5>
 				
-					<ul>
-						<li>
-						Work with customers by phone, chat and email to solve urgent
-						technical issues with the platform
-						</li>
-						<li>
-						Providing general information about LearnWorlds, as well as
-						available features and how to insights.
-						</li>
-						<li>Making UI changes using CSS & HTML</li>
-						<li>
-						Investigating bugs & technical issues, then working with the Dev
-						Team to get them fixed
-						</li>
-					</ul>
+				<ul>
+					<li>
+					Assisting customers by phone, chat and email to solve urgent
+					technical issues with the platform
+					</li>
+					<li>
+					Providing general information about LearnWorlds, as well as
+					available features and how to insights.
+					</li>
+					<li>Making UI changes using CSS & HTML</li>
+					<li>
+					Investigating bugs & technical issues, then working with the Dev
+					Team to get them fixed
+					</li>
+				</ul>
 				
 			</div>
 			<div class="job job-2">
-				<h3>Fraud Investigator</h3>
+				<h4>Fraud Investigator</h4>
 				<h5>The Stars Group, Malta <span>03/2018 - 05/2019</span></h5>
 				
 				<ul>
@@ -134,7 +147,7 @@
 				
 			</div>
 			<div class="job job-3">
-				<h3>Customer Support Agent</h3>
+				<h4>Customer Support Agent</h4>
 				<h5>Tipico, Malta <span>05/2017 - 02/ 2018</span></h5>
 				
 				<ul>
@@ -145,7 +158,7 @@
 				
 			</div>
 			<div class="job job-4">
-				<h3>Customer Support Agent</h3>
+				<h4>Customer Support Agent</h4>
 				<h5>Teleperformance, Greece <span>03/2014 - 01/ 2016</span></h5>
 				
 				<ul>
@@ -157,7 +170,7 @@
 				
 			</div>
 			<div class="job job-5">
-				<h3>Scientific Researcher</h3>
+				<h4>Scientific Researcher</h4>
 				<h5>Forschungszentrum Jülich <span>06/2012 - 05/ 2013</span></h5>
 				
 				<ul>
@@ -168,54 +181,24 @@
 			</div>
                 
   
-            <h2 class="education">Education</h2>
+            <h3 class="education">Education</h3>
             <div class="job edu-1">
-            <h3>Doctor der Ingenieurwissenschaften</h3>
-            <h5>RWTH Aachen, Germany</h5>
-			<!-- <ul>
-				<li>
-					Work with customers by phone, chat and email to solve urgent
-					technical issues with the platform
-				</li>
-				<li>
-					Providing general information about LearnWorlds, as well as
-					available features and how to insights.
-				</li>
-				<li>Making UI changes using CSS & HTML</li>
-				<li>
-					Investigating bugs & technical issues, then working with the Dev
-					Team to get them fixed
-				</li>
-			</ul> -->
+				<h4>Doctor der Ingenieurwissenschaften</h4>
+				<h5>Material Science | <span>RWTH Aachen, Germany</span></h5>
+				<p><a href="https://d-nb.info/103629059X/34" target="_blank">Investigation and characterization of membrane materials for the use in Pre-Combustion Processes</a></p>
+	
             
             </div>
             <div class="job edu-2">
-            <h3>Master of Science</h3>
-            <h5>University of Ioannina, Greece</h5>
+				<h4>Master of Science</h4>
+				<h5>Material Science |<span> University of Ioannina, Greece</span></h5>
+				<p><a href="https://drive.google.com/file/d/1eNIZgZbKK0NlHuylFBj46o9kLW2apnqh/view?usp=sharing" target="_blank">Preparation and characterization of Lithium Zirconate for Carbon Dioxide Capture at Elevated Temperatures</a></p>
+					
+			</div>
 				
-			<!-- <ul>
-				<li>
-					Validate and verify player related documentation to comply with
-					the Group’s licensing requirements in various locations
-				</li>
-				<li>
-					Preventing financial loss as a result of identifying fraudulent
-					behavior
-				</li>
-				<li>
-					Verification of withdrawals and processing of real money transfers
-				</li>
-				<li>
-					Maintaining procedures and processes that drive the identification
-					of high risk transactions
-				</li>
-			</ul> -->
-        
-            </div>
-            
-            <div class="resume">
-            <a class="btn" href="ChatziResume.pdf" title="" download>Download Resume</a>
-            </div>
+			<div class="resume">
+				<a class="btn" href="ChatziResume.pdf" title="" download>Download Resume</a>
+			</div>
         
         </section>
 	</div>
@@ -227,23 +210,23 @@
 			<div class="boxes">
 				<div class="icons">
 				<a href="mailto: c.chatzicharalampous@gmail.com"
-					><span class="text-secondary email"><i class="fas fa-envelope-square  fa-3x"></i></a
+					><span class="text-secondary email"><i class="fas fa-envelope-square  fa-2x"></i></a
 				>
 				</div>
 				<div class="icons">
 				<a href="tel: +36599949219"
-					><span class="text-secondary phone"><i class="fas fa-phone fa-3x"></i></a
+					><span class="text-secondary phone"><i class="fas fa-phone fa-2x"></i></a
 				>
 				</div>
 
 				<div class="icons">
 				<a href="https://www.linkedin.com/in/drchatzi/" target="_blank">
-					<i class="fab fa-linkedin fa-3x"></i>
+					<i class="fab fa-linkedin fa-2x"></i>
 				</a>
 				</div>
 				<div class="icons">
 				<a href="skype:c.chatzicharalampous">
-					<i class="fab fa-skype fa-3x"></i>
+					<i class="fab fa-skype fa-2x"></i>
 				</a>
 				</div>
 			</div>
@@ -251,9 +234,9 @@
 	</div>
 		
     </main>
-    <!-- <footer>
+    <footer id="footer" class="footer hide">
       Copyright 2020
-    </footer> -->
-    <script src="script.js"></script>
+    </footer>
+    <script src="script2.js"></script>
   </body>
 </html>

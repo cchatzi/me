@@ -1,0 +1,644 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "Caveat", cursive;
+  background: url("../img/background4.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+/* Header for the first page */
+
+.header.cover {
+  border: 3px green solid;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.header.cover .badge {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: calc(50vh - 125px);
+  left: calc(50vw - 125px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header.cover {
+  border: 3px green solid;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.header.cover .badge {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: calc(50vh - 125px);
+  left: calc(50vw - 125px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header.cover {
+  border: 3px green solid;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.header.cover .badge {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: calc(50vh - 125px);
+  left: calc(50vw - 125px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header.cover {
+  border: 3px green solid;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.header.cover .badge {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: calc(50vh - 125px);
+  left: calc(50vw - 125px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header.cover {
+  border: 3px green solid;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.header.cover .badge {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: calc(50vh - 125px);
+  left: calc(50vw - 125px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header.cover {
+  border: 3px green solid;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.header.cover .badge {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: calc(50vh - 125px);
+  left: calc(50vw - 125px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header.cover .circle.start-button {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+    circle at 65% 15%,
+    white 3px,
+    rgb(212, 207, 207) 5%,
+    rgb(41, 41, 42) 75%,
+    rgb(138, 135, 135) 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  z-index: 1;
+  box-shadow: 0.2px 0.2px 20px 2px rgb(61, 60, 60);
+}
+
+.header.cover .img {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+}
+
+.header.cover .badge.badge-icon .img {
+  width: 50px;
+  height: 50px;
+}
+
+.header.cover #name span {
+  font-family: "Caveat", cursive;
+  font-size: 2.2rem;
+  font-weight: bold;
+  height: 150px;
+  position: absolute;
+  top: -20px;
+  left: 116px;
+  transform-origin: bottom center;
+  z-index: 2;
+}
+
+.header.cover #title span {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  height: 120px;
+  position: absolute;
+  bottom: -5px;
+  left: 120px;
+  transform-origin: top center;
+  z-index: 2;
+}
+
+.char1 {
+  transform: rotate(-48deg);
+}
+.char2 {
+  transform: rotate(-38deg);
+}
+.char3 {
+  transform: rotate(-29deg);
+}
+.char4 {
+  transform: rotate(-20deg);
+}
+.char5 {
+  transform: rotate(-11deg);
+}
+.char6 {
+  transform: rotate(-1deg);
+}
+.char7 {
+  transform: rotate(9deg);
+}
+.char8 {
+  transform: rotate(18deg);
+}
+.char9 {
+  transform: rotate(27deg);
+}
+.char10 {
+  transform: rotate(36deg);
+}
+.char11 {
+  transform: rotate(45deg);
+}
+.char12 {
+  transform: rotate(54deg);
+}
+
+.title-char1 {
+  transform: rotate(50deg);
+}
+.title-char2 {
+  transform: rotate(44deg);
+}
+.title-char3 {
+  transform: rotate(38deg);
+}
+.title-char4 {
+  transform: rotate(32deg);
+}
+.title-char5 {
+  transform: rotate(26deg);
+}
+.title-char6 {
+  transform: rotate(20deg);
+}
+.title-char7 {
+  transform: rotate(14deg);
+}
+.title-char8 {
+  transform: rotate(8deg);
+}
+.title-char9 {
+  transform: rotate(2deg);
+}
+.title-char10 {
+  transform: rotate(-4deg);
+}
+.title-char11 {
+  transform: rotate(-10deg);
+}
+.title-char12 {
+  transform: rotate(-16deg);
+}
+.title-char13 {
+  transform: rotate(-22deg);
+}
+.title-char14 {
+  transform: rotate(-28deg);
+}
+.title-char15 {
+  transform: rotate(-34deg);
+}
+.title-char16 {
+  transform: rotate(-40deg);
+}
+.title-char17 {
+  transform: rotate(-46deg);
+}
+.title-char18 {
+  transform: rotate(-52deg);
+}
+
+/* header after getting into the site */
+
+.header.mainPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.header.mainPage .badge {
+  height: 55px;
+  width: 55px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.header.mainPage .badge span {
+  display: none;
+}
+
+.header.mainPage .badge .circle.start-button {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(
+    circle at 65% 15%,
+    white 3px,
+    rgb(212, 207, 207) 5%,
+    rgb(41, 41, 42) 75%,
+    rgb(138, 135, 135) 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  z-index: 200;
+  box-shadow: 0.2px 0.2px 5px 2px rgb(248, 235, 235);
+}
+
+.header.mainPage .badge .start-button.circle::before {
+  content: "";
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(
+    rgb(255, 252, 252) 0%,
+    #bec3c3de 55%,
+    #4d4d58f3 90%
+  );
+  filter: blur(18px);
+  border-radius: 50%;
+}
+
+.header.mainPage .badge .img {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+}
+
+.header.mainPage .menu {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.header.mainPage .hamburger {
+  position: absolute;
+  z-index: 300;
+  right: 20px;
+  top: 25px;
+  cursor: pointer;
+}
+
+.header.mainPage .hamburger .hamburgerItems {
+  width: 22px;
+  height: 3px;
+  margin: 0 0 4px 0;
+  background: #000;
+}
+
+.hamburger.close {
+  transform: rotate(180deg);
+}
+
+.hamburger.close .hamburgerItems:nth-child(1) {
+  transform: rotate(45deg) translate(5.5px, 15px);
+}
+
+.hamburger.close .hamburgerItems:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.close .hamburgerItems:nth-child(3) {
+  transform: rotate(-45deg) translate(-5.5px, -4.5px);
+}
+
+.header.mainPage .badge .userName {
+  position: absolute;
+  width: 150px;
+  top: 0px;
+  left: 60px;
+}
+
+.header.mainPage .badge .userTitle {
+  position: absolute;
+  width: 180px;
+  top: 22px;
+  left: 90px;
+}
+
+.header.mainPage .menu {
+  position: absolute;
+  top: 88px;
+  left: -2px;
+  border: 1px black solid;
+  width: 100vw;
+  margin: 0a auto;
+  height: 80px;
+}
+
+.header.mainPage .menu .menu-nav {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.header.mainPage .menu .menu-nav .nav-item {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.main {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  overflow: hidden;
+  position: absolute;
+  top: 100px;
+}
+
+.main .first {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  margin-top: 50px;
+}
+
+.main .first .home h3 {
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.main .first .home p {
+  margin-bottom: 0.5rem;
+}
+
+.main .first .home p:nth-last-child(3) {
+  margin-bottom: 1.2rem;
+}
+
+.footer {
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  bottom: -100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6rem;
+}
+
+.main .second {
+  position: relative;
+  z-index: 1000;
+  width: 100vw;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+}
+
+.main .second .exp_edu {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  padding-top: 20px;
+}
+
+.main .second .exp_edu h3 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.main .second .exp_edu h4 {
+  margin-bottom: 3px;
+}
+
+.main .second .exp_edu .job li {
+  font-size: 0.7rem;
+}
+
+.main .second .exp_edu .job li:last-child {
+  margin-bottom: 30px;
+}
+
+.main .second p {
+  margin-bottom: 20px;
+  font-size: 0.6rem;
+}
+
+main .second p a {
+  color: black;
+}
+
+main .second p a:visited {
+  color: black;
+}
+
+.main .resume {
+  width: 100%;
+  text-align: center;
+  margin: 60px 0 30px;
+}
+
+.main .resume .btn {
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: rgb(51, 49, 49);
+}
+
+.main .resume .btn:hover {
+  background-color: rgb(51, 49, 49);
+  color: #fff;
+  transition: all 0.2s ease-in;
+}
+
+.main .third {
+  position: relative;
+  z-index: 1000000;
+  width: 100vw;
+  height: calc(100vh - 120px);
+}
+
+.main .third .contact_page {
+  width: 70%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main .third .contact_page .contact_me h3 {
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+.main .third .boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main .third .boxes .icons {
+  margin: 0.5rem;
+}
+
+.main .third .boxes .icons i {
+  color: rgb(61, 60, 60);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 501px) {
+  .header.mainPage .badge .circle.start-button {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header.mainPage .badge .userName {
+    position: absolute;
+    width: 150px;
+    top: 10px;
+    left: 90px;
+  }
+
+  .header.mainPage .badge .userTitle {
+    top: 35px;
+    left: 120px;
+  }
+
+  .main .first {
+    width: 70%;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header.mainPage .badge .circle.start-button {
+    width: 100px;
+    height: 100px;
+  }
+
+  .header.mainPage .badge .userName {
+    font-size: 2rem;
+    top: 15px;
+    left: 120px;
+  }
+
+  .header.mainPage .badge .userTitle {
+    top: 45px;
+    left: 150px;
+    font-size: 1.5rem;
+  }
+
+  .main .first {
+    width: 60%;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1171px) {
+  .header.mainPage .badge .circle.start-button {
+    width: 120px;
+    height: 120px;
+  }
+
+  .header.mainPage .badge .userName {
+    width: 250px;
+    font-size: 2.5rem;
+    top: 15px;
+    left: 140px;
+  }
+
+  .header.mainPage .badge .userTitle {
+    width: 250px;
+    top: 60px;
+    left: 180px;
+    font-size: 1.8rem;
+  }
+
+  .main .first {
+    width: 50%;
+    font-size: 1.2rem;
+    margin-top: 120px;
+  }
+}
